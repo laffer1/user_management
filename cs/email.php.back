@@ -1,0 +1,16 @@
+<?php
+
+
+	include "libmail.php";
+
+	$m= new Mail; // create the mail
+	
+	$m->From( "lholt3@emich.edu" );
+	$m->To( "lholt3@emich.edu" );
+	$m->Subject( "Computer Science: Account Created" );
+	$m->Body( "Your account has been created" );	// set the body
+	$m->Priority(3) ;
+	
+	$m->Send();	// send the mail
+
+?>
